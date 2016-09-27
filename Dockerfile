@@ -24,7 +24,7 @@ RUN chmod +x /usr/local/bin/net_speeder
 RUN mkdir -p /etc/supervisor/conf.d/ /var/log/supervisor/
 COPY supervisord.conf /etc/supervisor/supervisord.conf
 
-EXPOSE 80
+EXPOSE 1111
 
 # Configure container to run as an executable
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
